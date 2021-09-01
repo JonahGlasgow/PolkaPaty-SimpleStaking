@@ -55,7 +55,7 @@ const HeaderRow = styled.div`
 `
 
 const ContentWrapper = styled.div`
-  background-color: ${({ theme }) => theme.bg2};
+  background-color: ${({ theme }) => theme.bg4};
   padding: 2rem;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -352,7 +352,7 @@ export default function WalletModal({
           )}
           {walletView !== WALLET_VIEWS.PENDING && (
             <Blurb>
-              <span  style={{ color: 'rgb(255, 20, 40' }}>New to Ethereum? &nbsp;</span>{' '}
+              <span  style={{ color: '#EE2A6E' }}>New to Ethereum? &nbsp;</span>{' '}
               <ExternalLink href="https://ethereum.org/wallets/">Learn more about wallets</ExternalLink>
             </Blurb>
           )}
