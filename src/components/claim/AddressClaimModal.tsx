@@ -8,7 +8,7 @@ import { TYPE, ExternalLink, CloseIcon, CustomLightSpinner, UniTokenAnimated } f
 import { ButtonPrimary } from '../Button'
 import { useClaimCallback, useUserUnclaimedAmount, useUserHasAvailableClaim } from '../../state/claim/hooks'
 import tokenLogo from '../../assets/images/token-logo.png'
-import Circle from '../../assets/images/blue-loader.svg'
+import Circle from '../../assets/images/pink-loader.svg'
 import { Text } from 'rebass'
 import AddressInputPanel from '../AddressInputPanel'
 import useENS from '../../hooks/useENS'

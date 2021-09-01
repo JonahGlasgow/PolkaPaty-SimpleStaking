@@ -52,8 +52,8 @@ export function colors(darkMode: boolean): Colors {
     // backgrounds / greys
     bg1: darkMode ? `url(${PolpBackground})` : `url(${PolpBackground})`, 
     bg2: darkMode ? '#2C2F36' : '#F7F8FA',
-    bg3: darkMode ? '#40444F' : '#F7F8FA',
-    bg4: darkMode ? '#565A69' : '#F7F8FA',
+    bg3: darkMode ? '#40444F' : '#EDEEF2',
+    bg4: darkMode ? '#565A69' : '#fbedf6',
     bg5: darkMode ? '#6C7284' : '#EE2A6E',
 
  
