@@ -198,7 +198,7 @@ export default function Manage({
       <DataRow style={{ gap: '24px' }}>
         <PoolData>
           <AutoColumn gap="sm">
-            <TYPE.body style={{ margin: 0 }}>Minimum Stake Time</TYPE.body>
+            <TYPE.body style={{ margin: 0 }}>Pool Duration</TYPE.body>
             <TYPE.body fontSize={24} fontWeight={500}>
               {valueOfTotalStakedAmountInUSDC
                 ? `$${valueOfTotalStakedAmountInUSDC.toFixed(0, { groupSeparator: ',' })}`
@@ -341,7 +341,7 @@ export default function Manage({
           <span role="img" aria-label="wizard-icon" style={{ marginRight: '8px' }}>
             ⭐️
           </span>
-          If you withdraw early your rewards will be surrendered, make sure to check your deposit time on etherscan! 
+          Note any deposits made will be added to the party pool, you cannot withdraw until the pool duration has completed! 
         </TYPE.main>
        
 
