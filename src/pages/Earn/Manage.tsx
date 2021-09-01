@@ -58,7 +58,7 @@ const StyledDataCard = styled(DataCard)<{ bgColor?: any; showBackground?: any }>
 `
 
 const StyledBottomCard = styled(DataCard)<{ dim: any }>`
-  background: ${({ theme }) => theme.bg3};
+ /* background: ${({ theme }) => theme.bg3}; */
   opacity: ${({ dim }) => (dim ? 0.4 : 1)};
   margin-top: -40px;
   padding: 0 1.25rem 1rem 1.25rem;
@@ -299,7 +299,7 @@ export default function Manage({
             <AutoColumn gap="sm">
               <RowBetween>
                 <div>
-                  <TYPE.black color={'black'}>Your Unclaimed POLP</TYPE.black>
+                  <TYPE.black color={'white'}>Your Unclaimed POLP</TYPE.black>
                 </div>
                 {stakingInfo?.earnedAmount && JSBI.notEqual(BIG_INT_ZERO, stakingInfo?.earnedAmount?.raw) && (
                   <ButtonEmpty
@@ -313,7 +313,7 @@ export default function Manage({
                 )}
               </RowBetween>
               <RowBetween style={{ alignItems: 'baseline' }}>
-                <TYPE.largeHeader fontSize={36} fontWeight={600} color={'black'}>
+                <TYPE.largeHeader fontSize={36} fontWeight={600} color={'white'}>
                   <CountUp
                     key={countUpAmount}
                     isCounting
@@ -324,7 +324,7 @@ export default function Manage({
                     duration={1}
                   />
                 </TYPE.largeHeader>
-                <TYPE.black fontSize={16} fontWeight={500} color={'black'}>
+                <TYPE.black fontSize={16} fontWeight={500} color={'white'}>
                   <span role="img" aria-label="wizard-icon" style={{ marginRight: '8px ' }}>
                     ⚡
                   </span>
@@ -337,7 +337,7 @@ export default function Manage({
             </AutoColumn>
           </StyledBottomCard>
         </BottomSection>
-        <TYPE.main style={{ textAlign: 'center' }} fontSize={14}>
+        <TYPE.main style={{ textAlign: 'center' }} fontSize={14} color="white">
           <span role="img" aria-label="wizard-icon" style={{ marginRight: '8px' }}>
             ⭐️
           </span>
